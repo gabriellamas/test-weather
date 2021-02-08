@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <img width="300px" height="auto" src="https://i.ibb.co/k4Rrn8J/weather.png" alt="Weather Platform | Builders">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Desafio Platform Builders</h3>
+  <h4 align="center">Gabriel Lamas</h4>
+</p>
 
-## Available Scripts
+## O que é?
 
-In the project directory, you can run:
+Uma aplicação simples para verificar a temperatura e mais algumas informações da sua região
 
-### `yarn start`
+## Instruções
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1 - Clone o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```properties
+git clone https://github.com/gabriellamas/test-weather.git
+``` 
 
-### `yarn test`
+2 - Entre na pasta backend e rode o comando yarn para instalar as dependências
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```properties
+yarn
+``` 
+ou
+```properties
+npm install
+``` 
 
-### `yarn build`
+3 - Na pasta frontend também rode o comando yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```properties
+yarn
+``` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4 - Agora rode o comando yarn dev:server na pasta backend e yarn start na pasta frontend (*Nesta ordem*)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```properties
+yarn dev:server
+``` 
 
-### `yarn eject`
+```properties
+yarn start
+``` 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 5 - Pronto! agora é só acessar o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação rodando
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instruções para DEVS
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para buildar o frontend, rode um dos comandos abaixo na pasta frontend
 
-## Learn More
+```properties
+yarn build
+``` 
+ou
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```properties
+npm run build
+``` 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Observações
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Mesmo o backend não sendo meu forte, resolvi fazer uma camadinha para proteger meu ID de autorização de uso da api do [Open Weather](https://openweathermap.org/api).
+- Não senti a necessidade de utilizar muitas libs neste teste, apenas a date-fns para lidar com datas [date-fns](https://date-fns.org/) e a [react-icons](https://react-icons.github.io/react-icons/) para um ícone.
+- Utilizei [React Context](https://pt-br.reactjs.org/docs/context.html) para lidar com as informações a serem passadas para outros componentes.
