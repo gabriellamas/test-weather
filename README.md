@@ -39,7 +39,7 @@ ou
 npm install
 ``` 
 
-4 - Na pasta backend, rode o comando yarn dev:server ou npm run dev:server
+4 - Na pasta backend, rode o comando yarn dev:server
 
 ```properties
 yarn dev:server
@@ -49,7 +49,7 @@ ou
 npm run dev:server
 ``` 
 
-5 - Na pasta frontend, rode o comando yarn start ou npm start
+5 - Na pasta frontend, rode o comando yarn start
 
 ```properties
 yarn start
