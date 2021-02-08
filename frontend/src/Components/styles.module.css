@@ -1,0 +1,23 @@
+.card{
+  position: relative;
+  background:rgba(255,255,255,0.2);
+  padding:24px;
+  border-radius:8px;
+  width: 100%;
+  max-width: 350px;
+  margin:0px auto 8px auto;
+}
+
+.container{
+  display: flex;
+  align-items:center;
+}
+
+.container h2{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container div{
+  text-align: left;
+}

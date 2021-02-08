@@ -1,0 +1,111 @@
+.title{
+  margin-bottom:24px;
+}
+.title span{
+  display: block;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.global{
+  width:95%;
+  max-width: 500px;
+  margin:70px auto;
+  text-align: center;
+}
+
+.sunAndCloudArea{
+  position: relative;
+  width:100%;
+  max-width: 250px;
+  height:95px;
+  border-radius:4px;
+  margin:0px auto;
+}
+.sunAndCloudArea .sun, 
+.sunAndCloudArea .cloud{
+  position: absolute;
+}
+.sunAndCloudArea .sun{
+  width:40%;
+  z-index:6;
+  top:-30px;
+  right:40px;
+  animation: sunAnimation both infinite 10s ease;
+}
+  @keyframes sunAnimation {
+    0% {transform: translate(25%,0%)}
+    25% {transform: translate(0%,0%)}
+    75% {transform: translate(0%,0%)}
+    100% {transform: translate(25%,0%)}
+  }
+.sunAndCloudArea .cloud{
+  width: 100%;
+  z-index:8;
+  top:0px;
+  left:0px;
+  animation: cloudAnimation both infinite 10s ease; 
+}
+  @keyframes cloudAnimation {
+    0% {transform: translate(-15%,0%)}
+    25% {transform: translate(0%,0%)}
+    75% {transform: translate(0%,0%)}
+    100% {transform: translate(-15%,0%)}
+  }
+
+.btnLinkStyle{
+  padding:none;
+  background:none;
+  color:#fff;
+  border:none;
+  border-radius:4px;
+  margin-top:16px;
+  display: flex;
+  align-items: center;
+  margin:24px auto
+}
+.btnLinkStyle svg{
+  margin-left: 6px;
+  transition: 300ms;
+}
+.btnLinkStyle:hover svg{
+ transform: rotate(180deg);
+}
+
+.error{
+  position: absolute;
+  z-index: 100;
+  top:16px;
+  left:50%;
+  transform: translate(-50%,0%);
+  width:95%;
+  max-width: 450px;
+  height: auto;
+  word-wrap: break-word;
+  text-align: center;
+  background:#FF9494;
+  padding:8px;
+  color:#300305;
+  border-radius: 4px;
+  font-size: 14px;
+  animation: fadeIn forwards 600ms ease; 
+}
+  @keyframes fadeIn {
+    0% {
+      transform: translate(-50%,-100%);
+      opacity:0;
+    }
+    100%{
+      transform: translate(-50%, 0%);
+      opacity:1;
+    }
+  }
+
+.containerSunriseAndSunset{
+  justify-content: space-between;
+}
+.iconSunriseSunset{
+  width: 100px;
+  height: 100px;
+  padding:18px;
+}
