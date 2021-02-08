@@ -34,23 +34,35 @@ npm install
 ```properties
 yarn
 ``` 
+ou
+```properties
+npm install
+``` 
 
-4 - Agora rode o comando yarn dev:server na pasta backend e yarn start na pasta frontend (*Nesta ordem*)
+4 - Agora rode o comando yarn dev:server ou npm run dev:server na pasta backend e yarn start ou npm start na pasta frontend (*Nesta ordem*)
 
 ```properties
 yarn dev:server
+``` 
+ou
+```properties
+npm run dev:server
 ``` 
 
 ```properties
 yarn start
 ``` 
+ou
+```properties
+npm start
+``` 
 
 ### 5 - Pronto! agora é só acessar o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação rodando
 
-
+---
 ## Instruções para DEVS
 
-Para buildar o frontend, rode um dos comandos abaixo na pasta frontend
+Para fazer o build do frontend, rode um dos comandos abaixo na pasta frontend
 
 ```properties
 yarn build
